@@ -1,0 +1,21 @@
+{
+  "name": "music-player-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/paradoxinversion/music-player-server.git",
+  "author": "Jedai Saboteur <dev@paradoxinversion.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "start": "yarn start:dev",
+    "start:dev": "nodemon ./src/server.js",
+    "start:debug": "node --inspect ./src/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
